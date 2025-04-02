@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodBar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+
+  </head>
+<body >
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" style="border-radius: 5px;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">FoodBar :) </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link" href="#">Features</a>
+              <a class="nav-link" href="#">Pricing</a>
+              <!--  -->
+              <!-- <a class="btn btn-white rl-pop" aria-disabled="true"  >Register</a>
+              <a class="btn btn-dark rl-pop" aria-disabled="true" style="margin-left: 10px;margin-right: 15px;"  >Login</a> -->
+              <!--  -->
+            </div>
+          </div>
+        </div>
+
+        <a class="btn btn-white rl-pop" aria-disabled="true"  >Register</a>
+        <a class="btn btn-dark rl-pop" aria-disabled="true" style="margin-left: 10px;margin-right: 15px;"  >Login</a>
+      </nav>
+
+    
+    <div class="intro">
+    <div id="webName">Foodie Recipe </div>
+    <div id="details">"Explore delicious, easy-to-make recipes for every occasion. Cook with &nbsp; &nbsp; &nbsp;confidence using our step-by-step guides and expert tips!"</div>
+    </div>
+
+
+  
+    <div class="search-bar">
+        <input type="text" id="homepageSearch" placeholder="Search your recipe" class="form-control">
+        <button id="searchBtn" class="btn btn-dark" style="height: 37px;margin-bottom: 2px;">Search</button>
+        <button id="fav" class="btn btn-dark">Favourites</button>
+    </div>
+
+    <hr>
+    <h5 id="foodResult" style="margin-bottom: 18px;">Some food recipes </h5>
+    
+    <div class="foodExamples">
+ 
+    </div>
+
+
+      <!-- Footer Section -->
+      <footer style="border-radius: 10px;margin-top: 30px;" class="bg-dark text-light py-5">
+        <div class="container">
+          <div class="row">
+            <!-- Brand Section -->
+            <div class="col-lg-4 mb-4">
+              <h4>FoodBar</h4>
+              <p>Delicious recipes made simple. Explore new flavors every day!</p>
+              <p class="text-muted">© 2025 FoodBar. All rights reserved.</p>
+            </div>
+      
+            <!-- Links Section -->
+            <div class="col-lg-2 mb-4">
+              <h5>Links</h5>
+              <ul class="list-unstyled">
+                <li><a href="#" class="text-light">Home</a></li>
+                <li><a href="#" class="text-light">Recipes</a></li>
+                <li><a href="#" class="text-light">About</a></li>
+                <li><a href="#" class="text-light">Contact</a></li>
+              </ul>
+            </div>
+      
+            <!-- Guides Section -->
+            <div class="col-lg-2 mb-4">
+              <h5>Guides</h5>
+              <ul class="list-unstyled">
+                <li><a href="#" class="text-light">Cooking Tips</a></li>
+                <li><a href="#" class="text-light">Diet Plans</a></li>
+                <li><a href="#" class="text-light">Ingredients</a></li>
+              </ul>
+            </div>
+      
+            <!-- Projects Section -->
+            <div class="col-lg-2 mb-4">
+              <h5>Projects</h5>
+              <ul class="list-unstyled">
+                <li><a href="#" class="text-light">Meal Plans</a></li>
+                <li><a href="#" class="text-light">Special Diets</a></li>
+                <li><a href="#" class="text-light">Food Blog</a></li>
+              </ul>
+            </div>
+      
+            <!-- Community Section -->
+            <div class="col-lg-2 mb-4">
+              <h5>Community</h5>
+              <ul class="list-unstyled">
+                <li><a href="#" class="text-light">Forums</a></li>
+                <li><a href="#" class="text-light">Facebook Group</a></li>
+                <li><a href="#" class="text-light">Instagram</a></li>
+                <li><a href="#" class="text-light">YouTube</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>      
+    <!--  -->
+
+    <!-- Dialog for registration and login -->
+
+    <dialog  id="reglog">
+      <h3 id="reglog-h3">sorry</h3>
+      <p>Currently Login and registration are not available.</p>
+      <button class="btn btn-dark rlDialogClose" >Close</button>
+    </dialog>
+
+
+    <!-- card content view option  -->
+    <!-- <dialog  id="CardView">
+      <div class="foodimage"></div>
+      <div class="foodContent">
+        <h2>Foodname</h2>
+        <h4>Ingredients:</h4>
+        <p>
+         Lorem ipsum dolor sit amet consectetur atatibus nam.
+        </p>
+
+        <h4>instructions</h4>
+        <p>
+            Lorem ipsum dolor sit amet consectetur atatibus nam.
+
+        </p>
+
+        <button class="btn btn-danger">YouTube</button>
+        <button class="btn btn-dark closecardView"  >Close</button>
+        
+
+      </div>
+    </dialog> -->
+
+    <!-- for refernece -->
+    <!-- <dialog id="CardView" > -->
+      <!-- <dialog open  class="CardView makingcvFlex" >
+      <div class="foodimage"></div>
+      <div class="foodContent">
+        <h2>Foodname</h2>
+        <h4>Ingredients:</h4>
+        <p>
+         Lorem ipsum dolor sit amet consectetur atatibus nam.
+        </p>
+
+        <h4>instructions</h4>
+        <p>
+            Lorem ipsum dolor sit amet consectetur atatibus nam.
+
+        </p>
+
+        <button class="btn btn-danger">YouTube</button>
+        <button class="btn btn-dark closecardView"  >Close</button>
+        
+
+      </div>
+      
+    </dialog> -->
+
+
+    <!--                            -->
+    <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+</html>
